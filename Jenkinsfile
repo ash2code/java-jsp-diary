@@ -8,7 +8,7 @@ pipeline {
     stages {
      stage("code-checout") {
         steps {
-            
+            git 'https://github.com/ash2code/java-jsp-diary.git'
         }
      }
      stage("docker-build") {
